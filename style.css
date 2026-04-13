@@ -1,0 +1,95 @@
+body {
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.Calc{
+   
+    font-family: Cambria;
+    background-color: rgba(215, 226, 236, 0.685);
+    border-radius: 15px;
+    max-width: 300px;
+    overflow: hidden;
+    box-shadow: 8px 8px 10px rgba(178, 213, 245, 0.685);
+}
+
+#display{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 3rem;
+    text-align: left;
+    border: 10px solid white;
+    background-color: rgba(63, 60, 60, 0.904) ;
+    color: white;
+}
+
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 19px;
+    padding: 20px;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    border: none;
+    background-color: gray;
+    color: rgba(255, 228, 196, 0.84);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(117, 106, 106); 
+}
+
+button:active{
+background-color: rgb(78, 77, 77);
+}
+
+.operator{
+    background-color: rgb(236, 111, 65);
+    color: white;
+}
+
+.operator:hover{
+    background-color: rgb(252, 164, 132) ;
+}
+
+.operator:active{
+    background-color:  rgb(243, 92, 37);
+}
+
+
+.clean{
+    
+    color: white;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .Calc {
+        max-width: 100%;
+        box-shadow: none;
+    }
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
+    #display {
+        font-size: 3rem;
+        border: none;
+    }
+}
+
